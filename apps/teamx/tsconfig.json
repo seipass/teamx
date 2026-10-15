@@ -1,0 +1,10 @@
+{
+	"extends": "../../tsconfig.json",
+	"include": [
+		"src/**/*.ts",
+		"test/**/*.ts",
+		"../../packages/coding-agent/src/utils/highlight-js.d.ts",
+		"../../packages/coding-agent/src/bun/quickjs-wasm.d.ts"
+	],
+	"exclude": []
+}

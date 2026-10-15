@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "teams": {
+    "dev": {
+      "name": "Development",
+      "instructions": "Coordinate through the shared board and messages. Submit work for review before completion.",
+      "tools": [
+        "read",
+        "write",
+        "edit",
+        "bash",
+        "grep",
+        "find",
+        "ls",
+        "team_tasks",
+        "team_messages",
+        "team_handoff"
+      ],
+      "skills": {},
+      "mcp": {},
+      "defaults": {
+        "tools": [
+          "read",
+          "team_tasks",
+          "team_messages",
+          "team_handoff"
+        ],
+        "skills": [],
+        "mcp": {}
+      },
+      "agents": {
+        "lead": {
+          "name": "Lead",
+          "role": "Break requests into tasks, assign specialists, and coordinate reviews."
+        },
+        "builder": {
+          "name": "Builder",
+          "role": "Implement assigned tasks and submit results for review.",
+          "capabilities": {
+            "tools": [
+              "read",
+              "write",
+              "edit",
+              "bash",
+              "grep",
+              "find",
+              "ls",
+              "team_tasks",
+              "team_messages",
+              "team_handoff"
+            ]
+          }
+        },
+        "reviewer": {
+          "name": "Reviewer",
+          "role": "Review submitted work, report findings, and approve completed tasks."
+        }
+      }
+    }
+  }
+}
